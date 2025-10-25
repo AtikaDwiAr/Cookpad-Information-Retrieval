@@ -19,17 +19,50 @@ searcher.set_bm25(k1=0.9, b=0.4)
 
 st.set_page_config(page_title="Temu Kembali Resep Masakan", layout="wide")
 
+# Styling
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #FEEAE6;
+    }
+    .stApp {
+        background-color: #FEEAE6;
+    }
+    h1, h3, p {
+        color: #442C2E;
+        font-family: "Open-sans", sans-serif;
+    }
+    label[data-testid="stWidgetLabel"] > div > p {
+        font-size: 18px !important;
+        font-weight: bold !important;
+        color: #5D4037 !important;
+        font-family: "Open Sans", sans-serif !important;
+    }
+    .stTextInput > div > div > input {
+        color: #442C2E;
+        font-family: "Open Sans", sans-serif;
+        background-color: #FEEAE6;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 10px 14px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Judul
 st.markdown(
     """
-    <h1 style="text-align: center; color: black;">
+    <h1 style="text-align: center; color: #442C2E; font-family: 'Open Sans', sans-serif; font-size: 44px;">
         Temu Kembali Resep Masakan
     </h1>
     """,
     unsafe_allow_html=True
 )
 
-query = st.text_input("Cari resep berdasarkan kata kunci")
+query = st.text_input("Cari Resep Berdasarkan Kata Kunci")
 
 if query:
     st.write(f"Hasil pencarian untuk **'{query}'**:")
