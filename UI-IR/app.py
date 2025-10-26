@@ -42,9 +42,9 @@ st.markdown(
     .stTextInput > div > div > input {
         color: #442C2E;
         font-family: "Open Sans", sans-serif;
-        background-color: #FEEAE6;
+        background-color: #FAF6F5;
         border-radius: 10px;
-        border: 1px solid #ccc;
+        border: 3px solid #8D6E63;
         padding: 10px 14px;
     }
     </style>
